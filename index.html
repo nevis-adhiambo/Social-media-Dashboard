@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            color: blueviolet;
+        }
+        
+        .attribution a {
+            color: rgb(42, 243, 243);
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="row flex px-2 py-2 dashboard">
+            <div class="left">
+                <h1 class="social">Social Media Dashboard</h1>
+                <p class="socialFollower">Total Followers: 23,004</p>
+            </div>
+            <div class="right flex">
+                <small class="mode">Dark Mode</small>
+                <div class="toggleBtn">
+                    <div class="light-mode" id="circle"></div>
+                </div>
+                <i></i>
+            </div>
+        </div>
+        <hr>
+        <div class="row px-2 py-4">
+
+            <div class="col-md-3">
+                <div class="card-wrapper" id="facebook">
+                    <div class="flex justify-center align-center top">
+                        <img src="images/icon-facebook.svg" alt="facebook-icon">
+                        <p class="para">@nathanf</p>
+                    </div>
+                    <div class="middle">
+                        <strong class="strong">1987</strong>
+                        <h5 class="follower">Followers</h5>
+                    </div>
+                    <div class="bottom">
+                        <p class="green"><span><img src="images/icon-up.svg"></span> Today</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-wrapper" id="twitter">
+                    <div class="flex justify-center align-center top">
+                        <img src="images/icon-twitter.svg" alt="twitter-icon">
+                        <p class="para">@nathanf</p>
+                    </div>
+                    <div class="middle">
+                        <strong class="strong">1044</strong>
+                        <h5 class="follower">Followers</h5>
+                    </div>
+                    <div class="bottom">
+                        <p class="green"><span><img src="images/icon-up.svg"></span>99 Today</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-wrapper" id="instagram">
+                    <div class="flex justify-center align-center top">
+                        <img src="images/icon-instagram.svg" alt="instagram-icon">
+                        <p class="para">@realnathanf</p>
+                    </div>
+                    <div class="middle">
+                        <strong class="strong">11k</strong>
+                        <h5 class="follower">Followers</h5>
+                    </div>
+                    <div class="bottom">
+                        <p class="green"><span><img src="images/icon-up.svg"></span>1099 Today</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-wrapper" id="youtube">
+                    <div class="flex justify-center align-center top">
+                        <img src="images/icon-youtube.svg" alt="youtube-icon">
+                        <p class="para">Nathan F.</p>
+                    </div>
+                    <div class="middle">
+                        <strong class="strong">8239</strong>
+                        <h5 class="follower">Subscribers</h5>
+                    </div>
+                    <div class="bottom">
+                        <p class="red"><span><img src="images/icon-down.svg"></span>144 Today</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="overview">
+            <h3 class="overview-para">Overview - Today</h3>
+            <div class="row flex justify-center">
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Page Views</p>
+                            <img src="images/icon-facebook.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">87</strong>
+                            <small class="green"><span><img src="images/icon-up.svg"></span>3%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Likes</p>
+                            <img src="images/icon-facebook.svg">
+
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">52</strong>
+                            <small class="red"><span><img src="images/icon-down.svg"></span>2%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Likes</p>
+                            <img src="images/icon-instagram.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">5462</strong>
+                            <small class="green"><span><img src="images/icon-up.svg"></span>2257%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Profile Views</p>
+                            <img src="images/icon-instagram.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">52k</strong>
+                            <small class="green"><span><img src="images/icon-up.svg"></span>1375%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Retweets</p>
+                            <img src="images/icon-twitter.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">117</strong>
+                            <small class="green"><span><img src="images/icon-up.svg"></span>303%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Likes</p>
+                            <img src="images/icon-twitter.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">507</strong>
+                            <small class="green"><span><img src="images/icon-up.svg"></span>553%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Likes</p>
+                            <img src="images/icon-youtube.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">107</strong>
+                            <small class="red"><span><img src="images/icon-down.svg"></span>19%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-wapper">
+                        <div class="card-top-view">
+                            <p class="page">Likes</p>
+                            <img src="images/icon-youtube.svg">
+                        </div>
+                        <div class="card-bottom-view">
+                            <strong class="likes">1402</strong>
+                            <small class="red"><span><img src="images/icon-down.svg"></span>12%</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Nevis</a>.
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

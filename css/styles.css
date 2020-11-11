@@ -1,0 +1,266 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-size: 16px;
+    background: linear-gradient(-180deg, hsl(232, 19%, 15%), hsl(230, 17%, 14%));
+}
+
+.green {
+    color: hsl(163, 72%, 41%);
+}
+
+.red {
+    color: hsl(356, 69%, 56%);
+}
+
+#facebook {
+    border-top: .5rem solid hsl(208, 92%, 53%);
+}
+
+#twitter {
+    border-top: .5rem solid hsl(203, 89%, 53%);
+}
+
+#instagram {
+    position: relative;
+}
+
+#instagram::before {
+    position: absolute;
+    content: '';
+    background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-radius: .4rem;
+    width: 100%;
+    height: .5rem;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#youtube {
+    border-top: .5rem solid hsl(348, 97%, 39%);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 1;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.dashboard .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .right {
+    display: flex;
+    align-items: center;
+}
+
+.mode {
+    color: hsl(0, 0%, 100%);
+}
+
+.dashboard .left p {
+    color: hsl(228, 34%, 66%);
+    font-weight: 300;
+    margin: 0;
+}
+
+.toggleBtn {
+    position: relative;
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 30px;
+    margin-left: .3rem;
+    background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.light-mode {
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    z-index: 2;
+    top: .1rem;
+    left: .2rem;
+    background: hsl(230, 17%, 14%);
+}
+
+@media(max-width:768px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .social {
+        font-size: 1rem;
+    }
+}
+
+hr {
+    color: #ccc;
+    font-weight: 400;
+}
+
+.card-wrapper {
+    background: hsl(228, 28%, 20%);
+    width: 90%;
+    margin: .5rem auto;
+    padding: 1rem;
+    border-radius: .6rem;
+    text-align: center;
+}
+
+.card-wrapper .top {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.para {
+    margin-left: .5rem;
+    margin-top: .5rem;
+    color: hsl(228, 34%, 66%);
+}
+
+.card-wrapper .middle {
+    margin-bottom: 2rem;
+}
+
+.strong {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.follower {
+    color: hsl(228, 34%, 66%);
+    font-weight: lighter;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.card-wrapper .bottom p {
+    font-weight: bold;
+}
+
+.card-wrapper .bottom img {
+    margin-right: .5rem;
+}
+
+.overview-para {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.card-wapper {
+    background: hsl(228, 28%, 20%);
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+.overview .card-wapper .card-top-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page {
+    color: hsl(228, 34%, 66%);
+    font-weight: bold;
+}
+
+.likes {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+}
+
+.overview .card-wapper .card-top-view img {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.overview .card-wapper .card-bottom-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.overview .card-wapper .card-bottom-view small {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+/*light mode*/
+
+.lightBody {
+    background: linear-gradient(-180deg, hsl(225, 100%, 98%), hsl(0, 0%, 100%));
+}
+
+.lightSocial {
+    color: hsl(0, 0%, 0%);
+}
+
+.lightSocialFollower {
+    color: hsl(0, 0%, 0%);
+}
+
+.lightToggle {
+    background: hsl(230, 22%, 74%);
+}
+
+.darkmode {
+    background: hsl(0, 0%, 100%);
+    right: .2rem;
+    left: auto;
+}
+
+.lightCardwrapper {
+    background: hsl(227, 47%, 96%);
+}
+
+.lightOverview {
+    color: hsl(0, 0%, 0%);
+}
+
+.lightPara {
+    color: hsl(228, 12%, 44%);
+}
+
+.lightStrong {
+    color: hsl(230, 17%, 14%);
+}
+
+.lightFollower {
+    color: hsl(228, 12%, 44%);
+}
+
+.lightCard {
+    background: hsl(227, 47%, 96%);
+}
+
+.lightPage {
+    color: hsl(228, 12%, 44%);
+}
+
+.lightLikes {
+    color: hsl(230, 17%, 14%);
+}
+
+.lightMode {
+    color: hsl(228, 12%, 44%);
+}
